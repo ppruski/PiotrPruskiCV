@@ -440,10 +440,9 @@
 %    the text next to it
 %
 \let\@@section\relax
-\def\ds@overlapped{\ifx\@@section\relax\newsectionwidth{0.5in}\let
-  \@@section\unboxed@sectiontitle\fi}
-\def\ds@margin{\ifx\@@section\relax\newsectionwidth{1.3in}\let
-  \@@section\boxed@sectiontitle\fi}
+\def\ds@overlapped{\ifx\@@section\relax\newsectionwidth{0.5in}\let\@@section\unboxed@sectiontitle\fi}
+%\def\ds@margin{\ifx\@@section\relax\newsectionwidth{1.3in}\let\@@section\boxed@sectiontitle\fi}
+\def\ds@margin{\ifx\@@section\relax\newsectionwidth{1.1in}\let\@@section\boxed@sectiontitle\fi}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DEFAULTS: (some of them)
@@ -814,11 +813,13 @@
 
 \oddsidemargin -11mm
 \evensidemargin -11mm
-\textwidth=150mm
+%\textwidth=150mm
+\textwidth=154mm
 \itemsep=0cm
 \parsep=0cm
-\topmargin -5mm
-\textheight 265mm
+\topmargin -12mm
+%\textheight 265mm
+\textheight 275mm
 
 \newenvironment{list1}{
   \begin{list}{\ding{113}}{%
@@ -840,5 +841,4 @@
 \newcommand{\mysubheadingstyle}{\sl}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 

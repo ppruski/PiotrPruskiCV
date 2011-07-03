@@ -2,25 +2,36 @@
 \documentclass[margin,line]{resume}
 
 
-%\usepackage{hyperref}
-%\hypersetup{
-%	bookmarks=true,				% show bookmarks bar?
-%	unicode=false,				% non-Latin characters in Acrobat’s bookmarks
-%	pdftoolbar=true,			% show Acrobat’s toolbar?
-%	pdfmenubar=true,			% show Acrobat’s menu?
-%	pdffitwindow=false,			% window fit to page when opened
-%	pdfstartview={FitH},			% fits the width of the page to the window
-%	pdftitle={Piotr Pruski's Resume},	% title
-%	pdfauthor={Piotr Pruski},		% author
-%	pdfsubject={Resume},			% subject of the document
-%	pdfcreator={Creator},			% creator of the document
-%	pdfproducer={Producer},			% producer of the document
-%	pdfkeywords={Piotr}			% list of keywords
-%	pdfnewwindow=true,			% links in new window
-%	colorlinks=false,			% false: boxed links; true: colored links
-%
-%	pdfborder={0 0 0},
-%}
+\usepackage{color}
+\definecolor{myDarkBlue}{rgb}{0.0,0.0,0.3}
+
+%\usepackage{ifpdf}
+%\ifpdf
+%	\usepackage[pdftex]{hyperref}
+%\fi
+
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+	bookmarks=true,					% show bookmarks bar?
+	unicode=false,					% non-Latin characters in Acrobat’s bookmarks
+	pdftoolbar=true,				% show Acrobat’s toolbar?
+	pdfmenubar=true,				% show Acrobat’s menu?
+	pdffitwindow=false,				% window fit to page when opened
+	pdfstartview={FitH},				% fits the width of the page to the window
+	pdftitle={Piotr Pruski's Curriculum Vitae},	% title
+	pdfauthor={Piotr Pruski},			% author
+	pdfsubject={Resume},				% subject of the document
+	pdfkeywords={Piotr, Adam, Pruski, Resume, CV},	% list of keywords
+	pdfnewwindow=true,				% links in new window
+	colorlinks=true,				% false: boxed links; true: colored links
+	linkcolor=red,					% color of internal links
+	citecolor=green,				% color of links to bibliography
+	filecolor=magenta,				% color of file links
+	urlcolor=myDarkBlue,				% color of external links
+	pdfborder={0 0 0}				% The style of box around links
+}
+% mod to adjust the margins when hyperref enabled (with original resume.cls)
+%\setlength{\textheight}{9in}
 
 
 \begin{document}
@@ -36,16 +47,16 @@
 
 %_______________________________________________________________________________
 % Profile
-\section{\mysidestyle Profile}
+%\section{\mysidestyle Profile}
 
-	TODO: Enter description for profile here.
+%	TODO: Enter description for profile here.
 
 %_______________________________________________________________________________
 % Education
 \section{\mysidestyle Education}
 
-	\textbf{The University of Western Ontario}, London, ON, Canada	\vspace{2mm}\\\vspace{1mm}
-	\textsl{B.E.Sc., Software Engineering}	\hfill \textbf{ 2005 -- 2011}\vspace{-3mm}\\\vspace{-1mm}
+	\textbf{\href{http://www.uwo.ca/}{The University of Western Ontario}}, London, ON, Canada	\vspace{2mm}\\\vspace{1mm}
+	\textsl{B.E.Sc., \href{http://www.eng.uwo.ca/undergraduate/programs/Software.htm}{Software Engineering}}	\hfill \textbf{ 2005 -- 2011}\vspace{-3mm}\\\vspace{-1mm}
 	\begin{list2}
 		\item Thesis project on designing and implementing an anonymity authentication protocol for specific network communications (e.g., evaluations, voting, etc).
 	\end{list2}\vspace{-1.5mm}
@@ -54,30 +65,30 @@
 % Professional Experience
 \section{\mysidestyle Professional\\Experience}
 
-	\textbf{IBM}, Markham, ON, Canada				\vspace{2mm}\\\vspace{1mm}
-	\textsl{Technical Enablement Specialist}			\hfill\textbf{May 2011 -- Present}		\\\vspace{-3mm}
+	\textbf{\href{http://www.ibm.com/}{IBM}}, Markham, ON, Canada					\vspace{2mm}\\\vspace{1mm}
+	\textsl{Technical Enablement Specialist}				\hfill\textbf{May 2011 -- Present}		\\\vspace{-3mm}
 	\begin{list2}
 		\item Integration and automation of IBM Information Management software with partner solutions
 		\item Integrating cloud with IBM Information Management software and partner solutions
-		\item DB2 Training for IBM Business Partners
+		\item DB2 training for IBM Business Partners
 	\end{list2}
-	\textbf{IBM}, Markham, ON, Canada				\vspace{2mm}\\\vspace{1mm}
-	\textsl{Technical Enablement Specialist (Student on Call)}	\hfill\textbf{September 2010 -- May 2011}	\\
-	\textsl{Technical Enablement Specialist (Internship)}		\hfill\textbf{May 2009 -- August 2010}		\\\vspace{-1.5mm}
+	\textbf{\href{http://www.ibm.com/}{IBM}}, Markham, ON, Canada					\vspace{2mm}\\\vspace{1mm}
+	\textsl{Technical Enablement Specialist (Student on Call)}		\hfill\textbf{September 2010 -- May 2011}	\\
+	\textsl{\hspace*{1.0mm}Technical Enablement Specialist (Internship)}	\hfill\textbf{May 2009 -- August 2010}		\\\vspace{-1.5mm}
 	\begin{list2}
-		\item Worldwide education on DB2 and new Information Management products
-		\item Demonstrations, presentations / lectures, and hands-on labs
+		\item \href{http://www.ibm.com/developerworks/data/bootcamps}{Worldwide education on DB2 and new Information Management products}
+		\item Delivered demonstrations, presentations / lectures, and hands-on labs
 		\item Provided advice and guidance to clients porting applications with IBM
 		\item Point of contact for partners to resolve issues
 		\item Researched and tested DB2 in various virtualized environments such as Hyper-V and KVM
-		\item Technical writer: white papers; contributed to Redbooks
-		\item Appliance building
+		\item Technical writer: white papers; contributed to \href{http://www.redbooks.ibm.com/abstracts/sg247805.html}{Redbooks}
+		\item Appliance automation
 		\item Server maintenance
-		\item DB2 9 fundamental instructor for 100+ students (volunteer)
+		\item DB2 9 fundamentals instructor for 100+ students (volunteer)
 	\end{list2}
 
-	\textbf{OCI Vacuum Microengineering, Inc.}, London, ON, Canada	\vspace{2mm}\\\vspace{1mm}
-	\textsl{Engineering Assistance (Co-op)}				\hfill\textbf{May 2008 -- August 2008}		\\\vspace{-3mm}
+	\textbf{\href{http://www.ocivm.com/}{OCI Vacuum Microengineering, Inc.}}, London, ON, Canada	\vspace{2mm}\\\vspace{1mm}
+	\textsl{Engineering Assistance (Co-op)}					\hfill\textbf{May 2008 -- August 2008}		\\\vspace{-3mm}
 	\begin{list2}
 		\item Software testing
 		\item Software documentation
@@ -98,21 +109,21 @@
 \end{list2}
 
 %_______________________________________________________________________________
-% Activities and Societies
-\section{\mysidestyle Activities and\\Societies}
-
-\begin{list2}
-	\item Western Investment Club, 2007 -- 2011
-	\item UWO Polish Student Union, 2007 -- 2010
-\end{list2}
-
-%_______________________________________________________________________________
 % Languages
 \section{\mysidestyle Languages}
 
 \begin{list2}
 	\item English
 	\item Polish
+\end{list2}
+
+%_______________________________________________________________________________
+% Activities and Societies
+\section{\mysidestyle Activities and\\Societies}
+
+\begin{list2}
+	\item \href{http://www.westerninvestmentclub.com/}{Western Investment Club}, 2007 -- 2011
+	\item UWO Polish Student Union, 2007 -- 2010
 \end{list2}
 
 %_______________________________________________________________________________
@@ -123,9 +134,47 @@
 	\item Dean's Honor List, May 2011
 	\item Dean's Honor List, April 2010
 	\item Dean's Honor List, April 2009
-	\item NSERC Undergraduate Student Research Award (USRA), 2009	\hfill(\textsl{declined})
+	\item \href{http://www.uwo.ca/research/funding/internal/nserc_usra.html}{NSERC Undergraduate Student Research Award (USRA)}, 2009	\hfill(\textsl{declined})
 	\item Western Scholarship of Distinction, 2006 
 \end{list2}
+
+
+%_______________________________________________________________________________
+\newpage
+%_______________________________________________________________________________
+
+
+%_______________________________________________________________________________
+% Technical Skills Matrix
+\section{\mysidestyle Technical\\Skills Matrix} 
+
+\begin{tabular}{@{}p{1.75in}p{1.75in}p{1.75in}}
+
+\textbf{Specialties:}			&	Database Technology		&	Integration and Automation	\\
+					&	Cloud and Virtualization	&	Information Security		\\
+\\
+\textbf{Databases:}			&	IBM DB2				&					\\
+\\
+\textbf{Languages:}			&	C / C++				&	C\# and .NET Framework		\\
+					&	Java				&	Java Servlets / JSP		\\
+					&	Shell Scripting			&	SQL				\\
+					&	UML				&	XML				\\
+					&	XPath				&					\\
+\\
+\textbf{Development Tools:}		&	Eclipse				&	GWT				\\
+					&	MS Office			&	MS Visual Studio		\\
+					&	Rational Rose			&	openSUSE KIWI			\\
+					&	Version Control (SVN)		&	Vim				\\
+\\
+\textbf{Virtualization }		&	VMware				&	Hyper-V				\\
+\textbf{Technology:}			&	KVM				&					\\
+\\
+\textbf{Platforms:}			&	Linux				&	Mac OS X			\\
+					&	UNIX				&	Windows				\\
+\\
+\textbf{Computer-Aided }		&	AutoCAD				&	KeyCreator			\\
+\textbf{Technologies:}			&	OneCNC				&	SolidWorks			\\
+\end{tabular}
 
 %_______________________________________________________________________________
 % References
